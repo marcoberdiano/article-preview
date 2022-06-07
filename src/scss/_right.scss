@@ -1,0 +1,17 @@
+@import './profile';
+@import './social';
+
+.right{
+    flex: 2;
+    .title{
+        font-size: 1.1em;
+        padding: 1em 1.3em;
+        color: $VeryDarkGrayishBlue;
+    }
+    .subtitle{
+        margin: 0.5em 0em;
+        font-size: 0.9em;
+        padding: 0em 1.3em;
+        color: $DesaturatedDarkBlue;
+    }
+}

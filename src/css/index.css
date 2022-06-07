@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-container .profile-left {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.profile-container .profile-left .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.profile-container .profile-left .date {
+  color: hsl(212deg, 23%, 69%);
+  font-size: 0.9em;
+}
+.profile-container .profile-right {
+  margin-right: 15px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: hsl(210deg, 46%, 95%);
+  position: relative;
+  cursor: pointer;
+}
+.profile-container .ative {
+  background-color: hsl(217deg, 19%, 35%);
+}
+
+.social {
+  position: absolute;
+  bottom: 160%;
+  left: -225%;
+  background-color: hsl(217deg, 19%, 35%);
+  display: flex;
+  color: #FFF;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 1em;
+}
+.social .share {
+  color: hsl(212deg, 23%, 69%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.8em;
+}
+
+.right {
+  flex: 2;
+}
+.right .title {
+  font-size: 1.1em;
+  padding: 1em 1.3em;
+  color: hsl(217deg, 19%, 35%);
+}
+.right .subtitle {
+  margin: 0.5em 0em;
+  font-size: 0.9em;
+  padding: 0em 1.3em;
+  color: hsl(214deg, 17%, 51%);
+}
+
+.left {
+  flex: 1;
+}
+.left .drawers {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.app-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-container .card-container {
+  border-radius: 10px;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 40em;
+}
+
+@media only screen and (max-width: 860px) {
+  .app-container {
+    padding: 1em;
+  }
+  .app-container .card-container {
+    flex-direction: column;
+  }
+  .app-container .card-container .left .drawers {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .app-container .card-container .right .profile-container {
+    position: relative;
+  }
+  .app-container .card-container .right .profile-container .ative {
+    background-color: hsl(214deg, 17%, 51%);
+  }
+  .app-container .card-container .right .social-desk {
+    display: none;
+  }
+  .app-container .card-container .right .social {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: start;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(210deg, 46%, 95%);
+}
+
+/*# sourceMappingURL=index.css.map */

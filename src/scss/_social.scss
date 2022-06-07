@@ -1,0 +1,20 @@
+.social{
+    position: absolute;
+    bottom: 160%;
+    left: -225%;
+    background-color: $VeryDarkGrayishBlue;
+    display: flex;
+    color: #FFF;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 1em;
+
+    .share{
+        color: $GrayishBlue;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 0.8em;
+    }
+}
