@@ -33,7 +33,22 @@
         border-radius: 50%;
         background-color: $LightGrayishBlue;
         position: relative;
-        cursor: pointer;  
+        cursor: pointer;
+        
+        .social-desk{
+            &::after{
+                content: '';
+                position: absolute;
+                border-width: 1em;
+                border-style: solid;
+                border-top-color: $VeryDarkGrayishBlue;
+                top: -60%;
+                left: 1px;
+                border-right-color: transparent;
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+            }
+        }
     }
 
     .ative {

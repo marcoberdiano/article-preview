@@ -34,6 +34,18 @@
   position: relative;
   cursor: pointer;
 }
+.profile-container .profile-right .social-desk::after {
+  content: "";
+  position: absolute;
+  border-width: 1em;
+  border-style: solid;
+  border-top-color: hsl(217deg, 19%, 35%);
+  top: -60%;
+  left: 1px;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
 .profile-container .ative {
   background-color: hsl(217deg, 19%, 35%);
 }
